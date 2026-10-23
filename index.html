@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Flossmoor Montessori School — Toddler, Pre-Primary & Primary in Flossmoor, IL</title>
+<meta name="description" content="Flossmoor Montessori School in Flossmoor, Illinois: Montessori education for children 15 months to 6 years, with trained Guides, mixed-age classrooms and after-school care until 5:30.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,400&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#448cc4; --blue-d:#2f6d9e; --blue-l:#dcebf6;
+  --sun:#f2b84b; --leaf:#7fae6a; --coral:#e9775e;
+  --cream:#fbf6ee; --paper:#fffdf9; --ink:#1f2a33; --mut:#5d6b76; --line:#ebe2d4;
+  --r:26px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Nunito,system-ui,sans-serif;background:var(--cream);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;letter-spacing:-.02em;line-height:1.04}
+h1{font-size:clamp(46px,7vw,92px)}
+h2{font-size:clamp(36px,4.8vw,62px)}
+h3{font-size:26px}
+em{font-style:italic;font-weight:400;color:var(--blue)}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--blue-d);margin-bottom:18px}
+.eyebrow::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--sun)}
+.lead{font-size:19px;color:var(--mut);max-width:560px}
+section{padding:110px 0;position:relative}
+
+/* concept banner */
+.banner{background:var(--ink);color:#f4efe6;font-size:12.5px;text-align:center;padding:8px 16px}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;transition:background .3s,box-shadow .3s}
+nav.scrolled{background:rgba(251,246,238,.92);backdrop-filter:blur(12px);box-shadow:0 1px 0 var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:78px;gap:20px;transition:height .3s}
+nav.scrolled .wrap{height:64px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:Fraunces,serif;font-weight:600;font-size:21px;white-space:nowrap}
+.brand img{height:44px;width:auto}
+.brand .mark{width:40px;height:40px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-size:18px}
+.links{display:flex;gap:28px;list-style:none;font-weight:700;font-size:15px}
+.links a{text-decoration:none;color:var(--mut);position:relative}
+.links a::after{content:"";position:absolute;left:0;right:0;bottom:-4px;height:2px;background:var(--blue);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+.links a:hover{color:var(--ink)}.links a:hover::after{transform:scaleX(1)}
+.navr{display:flex;align-items:center;gap:18px}
+.navr .tel{font-weight:700;font-size:14px;text-decoration:none;color:var(--mut)}
+.btn{display:inline-flex;align-items:center;gap:8px;background:var(--blue);color:#fff;text-decoration:none;font-weight:800;font-size:15px;padding:14px 24px;border-radius:999px;border:0;cursor:pointer;transition:transform .25s cubic-bezier(.3,1.6,.5,1),background .2s,box-shadow .25s;box-shadow:0 10px 24px -12px rgba(47,109,158,.7)}
+.btn:hover{transform:translateY(-3px) rotate(-1.5deg);background:var(--blue-d)}
+.btn.ghost{background:transparent;color:var(--ink);border:2px solid var(--ink);box-shadow:none}
+.btn.ghost:hover{background:var(--ink);color:#fff}
+.btn .arr{transition:transform .25s}.btn:hover .arr{transform:translateX(4px)}
+
+/* hero */
+.hero{position:relative;min-height:calc(100vh - 34px);margin-top:-78px;display:flex;align-items:center;overflow:hidden;padding:150px 0 90px}
+.hero .bg{position:absolute;inset:0;z-index:0}
+.hero .bg img{width:100%;height:100%;object-fit:cover;object-position:70% 30%;transform:scale(1.06);animation:heroZoom 14s ease-out forwards}
+@keyframes heroZoom{to{transform:scale(1)}}
+.hero .bg::after{content:"";position:absolute;inset:0;background:
+  linear-gradient(90deg,var(--cream) 0%,rgba(251,246,238,.94) 30%,rgba(251,246,238,.55) 55%,rgba(251,246,238,0) 78%),
+  linear-gradient(0deg,var(--cream) 0%,rgba(251,246,238,0) 28%),
+  linear-gradient(180deg,rgba(251,246,238,.7) 0%,rgba(251,246,238,0) 18%)}
+#draw{position:absolute;inset:0;z-index:2;touch-action:none;cursor:crosshair;pointer-events:none}
+body.drawing #draw{pointer-events:auto}
+.hero .wrap{position:relative;z-index:3;width:100%;pointer-events:none}
+.hero .wrap *{pointer-events:auto}
+.hero h1{max-width:760px;margin-bottom:26px}
+.hero h1 .w{display:inline-block;opacity:0;transform:translateY(40px) rotate(3deg);animation:wordIn .8s cubic-bezier(.2,.9,.3,1.2) forwards}
+@keyframes wordIn{to{opacity:1;transform:none}}
+.hero .lead{margin-bottom:34px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.hero-foot{display:flex;gap:26px;flex-wrap:wrap;align-items:center;margin-top:44px;font-size:14px;font-weight:700;color:var(--mut)}
+.pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,253,249,.85);border:1px solid var(--line);padding:9px 16px;border-radius:999px}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--leaf)}
+
+/* crayon tray */
+.tray{position:absolute;right:28px;bottom:32px;z-index:4;display:flex;align-items:center;gap:10px;background:var(--paper);border:1px solid var(--line);padding:10px 12px 10px 16px;border-radius:999px;box-shadow:0 18px 40px -22px rgba(31,42,51,.45)}
+.tray span{font-size:13px;font-weight:800;color:var(--mut)}
+.crayon{width:26px;height:26px;border-radius:50%;border:3px solid var(--paper);outline:2px solid transparent;cursor:pointer;transition:transform .2s}
+.crayon:hover{transform:scale(1.15)}.crayon.on{outline-color:var(--ink)}
+.tray button.tool{font:inherit;font-weight:800;font-size:13px;border:0;border-radius:999px;padding:8px 14px;cursor:pointer;background:var(--ink);color:#fff}
+.tray button.clear{background:transparent;color:var(--mut);padding:8px 6px}
+body.drawing .tray button.tool{background:var(--coral)}
+
+/* doodles */
+.doodle{position:absolute;pointer-events:none;opacity:.9}
+.float{animation:float 6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-14px) rotate(6deg)}}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(36px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.1s}.rv.d2{transition-delay:.2s}.rv.d3{transition-delay:.3s}.rv.d4{transition-delay:.4s}
+
+/* why */
+.why{background:var(--paper);border-block:1px solid var(--line)}
+.why .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+.ticks{list-style:none;margin-top:34px;display:grid;gap:14px}
+.ticks li{display:flex;gap:14px;align-items:center;font-size:18px;font-weight:700}
+.ticks li i{flex:none;width:34px;height:34px;border-radius:12px;display:grid;place-items:center;background:var(--blue-l);color:var(--blue-d);font-style:normal;transform:rotate(-6deg)}
+.ticks li:nth-child(2) i{background:#fbecc9;color:#9a6a10;transform:rotate(5deg)}
+.ticks li:nth-child(3) i{background:#e2efd9;color:#4b7a37}
+.ticks li:nth-child(4) i{background:#fbdcd3;color:#a54530;transform:rotate(4deg)}
+.stats{display:grid;gap:18px}
+.stat{background:var(--cream);border:1px solid var(--line);border-radius:var(--r);padding:28px 30px;display:flex;align-items:baseline;gap:18px;transition:transform .3s}
+.stat:hover{transform:translateX(8px) rotate(-.6deg)}
+.stat b{font-family:Fraunces,serif;font-size:62px;line-height:1;color:var(--blue);min-width:150px}
+.stat span{color:var(--mut);font-weight:700}
+
+/* section heads */
+.sh{display:flex;justify-content:space-between;align-items:end;gap:30px;flex-wrap:wrap;margin-bottom:52px}
+.sh p{max-width:470px;color:var(--mut);font-size:17px}
+.more{display:inline-flex;align-items:center;gap:12px;font-weight:800;text-decoration:none;font-size:15px}
+.more .n{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--ink);color:#fff;font-size:13px;transition:transform .3s}
+.more:hover .n{transform:rotate(-12deg) scale(1.08);background:var(--blue)}
+
+/* programs */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;list-style:none}
+.card{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;display:flex;flex-direction:column;transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s}
+.card:hover{transform:translateY(-8px) rotate(-.6deg);box-shadow:0 26px 50px -30px rgba(31,42,51,.45)}
+.card .ph{aspect-ratio:4/3.4;overflow:hidden;background:var(--blue-l);position:relative}
+.card .ph img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.card:hover .ph img{transform:scale(1.07)}
+.age{position:absolute;left:14px;top:14px;background:var(--paper);font-size:12px;font-weight:800;padding:6px 12px;border-radius:999px}
+.card .cb{padding:22px 22px 26px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:28px}
+.card .tag{color:var(--mut);font-size:15px}
+.card .meta{font-size:13px;font-weight:800;color:var(--blue-d);margin-top:6px}
+.card ul{list-style:none;margin-top:10px;padding-top:14px;border-top:1px dashed var(--line);display:grid;gap:6px;font-size:14px;color:var(--mut)}
+.card ul li::before{content:"✓ ";color:var(--leaf);font-weight:800}
+
+/* journey timeline */
+.journey{background:var(--blue);color:#fff;overflow:hidden}
+.journey .eyebrow{color:#fff}.journey .eyebrow::before{background:var(--sun)}
+.journey em{color:#ffe2a6}
+.journey .sh p{color:rgba(255,255,255,.82)}
+.track{position:relative;margin-top:10px}
+.bar{height:4px;background:rgba(255,255,255,.22);border-radius:4px;margin:0 0 34px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:var(--sun);border-radius:4px;transition:width .15s linear}
+.steps{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(260px,1fr);gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:16px;scrollbar-width:none;list-style:none}
+.steps::-webkit-scrollbar{display:none}
+.step{scroll-snap-align:start;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);border-radius:var(--r);padding:26px;transition:background .3s,transform .3s}
+.step:hover{background:rgba(255,255,255,.18);transform:translateY(-4px)}
+.step .t{font-family:Fraunces,serif;font-size:34px;color:#ffe2a6;line-height:1}
+.step h4{font-size:19px;margin:12px 0 6px;font-weight:800}
+.step p{color:rgba(255,255,255,.8);font-size:15px}
+.journey .ctrl{display:flex;gap:10px}
+.journey .ctrl button{width:48px;height:48px;border-radius:50%;border:2px solid #fff;background:transparent;color:#fff;font-size:20px;cursor:pointer;transition:background .2s}
+.journey .ctrl button:hover{background:#fff;color:var(--blue)}
+
+/* environment tabs */
+.env{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:start}
+.stage{position:relative;aspect-ratio:5/4;border-radius:32px;overflow:hidden;background:var(--blue-l)}
+.stage img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.05);transition:opacity .7s,transform 1.2s}
+.stage img.on{opacity:1;transform:none}
+.tabs{list-style:none;display:grid;gap:12px}
+.tab{border:1px solid var(--line);background:var(--paper);border-radius:22px;padding:20px 24px;cursor:pointer;transition:background .3s,border-color .3s}
+.tab .h{display:flex;justify-content:space-between;align-items:center;font-family:Fraunces,serif;font-size:23px}
+.tab .h::after{content:"+";font-family:Nunito;font-weight:800;color:var(--blue);transition:transform .3s}
+.tab p{color:var(--mut);font-size:15px;margin-top:4px}
+.tab ul{list-style:none;display:none;margin-top:12px;gap:6px;font-size:14px;font-weight:700;flex-wrap:wrap}
+.tab ul li{background:var(--cream);border-radius:999px;padding:5px 12px}
+.tab.on{background:var(--blue-l);border-color:var(--blue)}
+.tab.on .h::after{transform:rotate(45deg)}
+.tab.on ul{display:flex}
+
+/* guides rail */
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:290px;gap:18px;overflow-x:auto;padding:6px 24px 24px;scroll-snap-type:x proximity;cursor:grab;scrollbar-width:none;list-style:none;max-width:1200px;margin:0 auto}
+.rail::-webkit-scrollbar{display:none}
+.rail.dragging{cursor:grabbing;scroll-snap-type:none}
+.guide{scroll-snap-align:start;background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:26px;display:flex;flex-direction:column;gap:10px;user-select:none;transition:transform .3s}
+.guide:hover{transform:translateY(-6px) rotate(.8deg)}
+.av{width:84px;height:84px;border-radius:30px;display:grid;place-items:center;font-family:Fraunces,serif;font-size:32px;color:#fff;transform:rotate(-5deg);margin-bottom:6px}
+.guide b{font-size:19px}
+.guide .role{font-size:13px;font-weight:800;color:var(--blue-d);text-transform:uppercase;letter-spacing:.06em}
+.guide p{font-size:14.5px;color:var(--mut)}
+.guide .yrs{margin-top:auto;padding-top:12px;border-top:1px dashed var(--line);font-size:13px;font-weight:800}
+.hint{font-size:13px;font-weight:800;color:var(--mut)}
+
+/* legacy */
+.legacy{background:var(--paper);border-block:1px solid var(--line)}
+.years{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;list-style:none;counter-reset:y}
+.yr{border-radius:var(--r);padding:26px;background:var(--cream);border:1px solid var(--line);position:relative;transition:transform .3s}
+.yr:nth-child(odd){transform:rotate(-1.2deg)}.yr:nth-child(even){transform:rotate(1deg)}
+.yr:hover{transform:rotate(0) translateY(-6px)}
+.yr .y{font-family:Fraunces,serif;font-size:44px;color:var(--blue);line-height:1}
+.yr p{font-size:15px;color:var(--mut);margin-top:10px}
+.yr.fms{background:var(--blue);border-color:var(--blue)}.yr.fms .y{color:#ffe2a6}.yr.fms p{color:rgba(255,255,255,.88)}
+.pin{position:absolute;top:-9px;left:50%;width:18px;height:18px;border-radius:50%;background:var(--coral);box-shadow:0 3px 0 rgba(0,0,0,.15);transform:translateX(-50%)}
+.yr:nth-child(2) .pin{background:var(--sun)}.yr:nth-child(3) .pin{background:var(--leaf)}.yr:nth-child(5) .pin{background:var(--sun)}
+
+/* fees */
+.fees{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;list-style:none;align-items:stretch}
+.fee{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:32px;display:flex;flex-direction:column;gap:6px;transition:transform .3s}
+.fee:hover{transform:translateY(-6px)}
+.fee.hi{background:var(--ink);color:#fff;border-color:var(--ink);transform:translateY(-12px)}
+.fee.hi:hover{transform:translateY(-18px)}
+.fee .k{font-weight:800;font-size:18px;display:flex;justify-content:space-between;align-items:center}
+.fee .badge{font-size:11px;background:var(--sun);color:var(--ink);padding:4px 10px;border-radius:999px;text-transform:uppercase;letter-spacing:.08em}
+.fee .s{color:var(--mut);font-size:14px}.fee.hi .s{color:rgba(255,255,255,.7)}
+.fee .p{font-family:Fraunces,serif;font-size:66px;line-height:1;margin:18px 0 4px}
+.fee .u{font-size:14px;font-weight:700;color:var(--mut)}.fee.hi .u{color:rgba(255,255,255,.7)}
+.fee ul{list-style:none;margin:22px 0 26px;display:grid;gap:8px;font-size:15px;border-top:1px dashed var(--line);padding-top:20px}
+.fee.hi ul{border-color:rgba(255,255,255,.2)}
+.fee ul li::before{content:"● ";color:var(--blue);font-size:10px;vertical-align:middle}
+.fee .btn{margin-top:auto;justify-content:center}
+.fee.hi .btn{background:#fff;color:var(--ink)}
+.fine{text-align:center;margin-top:34px;color:var(--mut);font-size:14px;font-weight:700}
+
+/* faq */
+.faq{display:grid;grid-template-columns:1.2fr .8fr;gap:50px;align-items:start}
+details{border-bottom:1px solid var(--line);padding:22px 4px}
+summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;font-family:Fraunces,serif;font-size:22px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";flex:none;width:34px;height:34px;border-radius:50%;background:var(--blue-l);color:var(--blue-d);display:grid;place-items:center;font-family:Nunito;font-weight:800;transition:transform .3s,background .3s}
+details[open] summary::after{transform:rotate(45deg);background:var(--blue);color:#fff}
+details p{color:var(--mut);margin-top:12px;max-width:640px;animation:fadeDown .4s ease}
+@keyframes fadeDown{from{opacity:0;transform:translateY(-6px)}}
+.ask{position:sticky;top:100px;background:var(--sun);border-radius:32px;padding:36px;transform:rotate(1.5deg)}
+.ask h3{font-style:italic;font-weight:400;font-size:36px}
+.ask p{margin:12px 0 22px;font-weight:600}
+.ask ul{list-style:none;display:grid;gap:10px;margin-bottom:24px}
+.ask li{display:flex;justify-content:space-between;gap:10px;background:rgba(255,255,255,.55);padding:12px 16px;border-radius:16px;font-weight:800;font-size:15px;flex-wrap:wrap}
+.ask li a{text-decoration:none}
+.ask .btn{background:var(--ink)}
+
+/* visit */
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:0;background:var(--paper);border:1px solid var(--line);border-radius:36px;overflow:hidden}
+.visit .l{padding:56px}
+.visit .r{position:relative;min-height:420px}
+.visit .r img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.q{margin-top:26px}
+.q b{display:block;font-size:14px;margin-bottom:10px}
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{font:inherit;font-weight:800;font-size:14px;padding:10px 16px;border-radius:999px;border:2px solid var(--line);background:var(--cream);cursor:pointer;transition:all .2s}
+.chip:hover{border-color:var(--blue)}
+.chip.on{background:var(--blue);border-color:var(--blue);color:#fff;transform:rotate(-2deg)}
+.visit .row{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:30px;font-size:14px;font-weight:700;color:var(--mut)}
+.note{margin-top:18px;font-size:14px;color:var(--mut);background:var(--cream);border-radius:16px;padding:14px 16px}
+
+/* footer */
+footer{background:var(--ink);color:#d5dce1;padding:80px 0 34px;margin-top:110px}
+.fgrid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:40px}
+footer .brand{color:#fff;font-size:26px}
+footer h5{color:#fff;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:14px}
+footer ul{list-style:none;display:grid;gap:8px;font-size:15px}
+footer a{text-decoration:none;color:#d5dce1}footer a:hover{color:#fff}
+.clock{font-family:Fraunces,serif;font-size:40px;color:#ffe2a6;line-height:1;margin-top:6px}
+.fb{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.12);margin-top:56px;padding-top:24px;font-size:13px}
+.top{background:none;border:0;color:#fff;font:inherit;font-weight:800;cursor:pointer}
+
+@media(max-width:1020px){
+  .links{display:none}
+  .cards{grid-template-columns:1fr 1fr}
+  .why .grid,.env,.faq,.visit{grid-template-columns:1fr}
+  .years{grid-template-columns:1fr 1fr}
+  .fees{grid-template-columns:1fr}.fee.hi{transform:none}
+  .fgrid{grid-template-columns:1fr 1fr}
+  .ask{position:static;transform:none}
+}
+@media(max-width:640px){
+  section{padding:76px 0}
+  .navr .tel{display:none}
+  nav .btn{padding:10px 16px;font-size:14px}
+  .brand span{font-size:17px}
+  .hero{padding:130px 0 120px;min-height:auto}
+  .hero .bg::after{background:linear-gradient(0deg,var(--cream) 0%,rgba(251,246,238,.92) 45%,rgba(251,246,238,.55) 75%,rgba(251,246,238,.75) 100%)}
+  .tray{left:16px;right:16px;bottom:18px;justify-content:space-between}
+  .tray span{display:none}
+  .cards,.years{grid-template-columns:1fr}
+  .stat b{font-size:48px;min-width:110px}
+  .visit .l{padding:32px 24px}
+  .fgrid{grid-template-columns:1fr}
+  .years .yr{transform:none}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}.hero h1 .w{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<div class="banner">Concept preview prepared by Virtual Media Hive for Flossmoor Montessori School — not the school's official website.</div>
+
+<nav id="nav"><div class="wrap">
+  <a class="brand" href="#top">
+    <img src="https://img1.wsimg.com/isteam/ip/c58cf23f-81bd-47a2-b22b-077d17945fc0/blob-cc6e4b7.png" alt="Flossmoor Montessori School logo" onerror="this.replaceWith(Object.assign(document.createElement('i'),{className:'mark',textContent:'F'}))">
+    <span>Flossmoor Montessori</span>
+  </a>
+  <ul class="links">
+    <li><a href="#programs">Programs</a></li>
+    <li><a href="#approach">Our approach</a></li>
+    <li><a href="#guides">Guides</a></li>
+    <li><a href="#fees">Fees</a></li>
+    <li><a href="#faq">FAQs</a></li>
+  </ul>
+  <div class="navr"><a class="tel" href="tel:+17087984600">708-798-4600</a><a class="btn" href="#visit">Book a tour</a></div>
+</div></nav>
+
+<header class="hero" id="top">
+  <div class="bg"><img src="https://framerusercontent.com/images/yN7RMaXfDrmCQI9tI8CR4Eio.webp" alt="A smiling young child in a sunlit classroom"></div>
+  <canvas id="draw" aria-hidden="true"></canvas>
+  <div class="wrap">
+    <div class="eyebrow">Young Toddler · Pre-Primary · Primary</div>
+    <h1 id="h1">Where children grow into themselves.</h1>
+    <p class="lead">A Montessori school in Flossmoor, Illinois, for children from 15 months to 6 years. Mixed-age classrooms, Montessori-trained Guides, and a prepared environment built for independence. Pick up a crayon and draw on the wall while you look around.</p>
+    <div class="cta"><a class="btn" href="#visit">Book a tour <span class="arr">→</span></a><a class="btn ghost" href="#programs">See the programs</a></div>
+    <div class="hero-foot">
+      <span class="pill"><i class="dot"></i>Licensed by Illinois DCFS</span>
+      <span class="pill">Nonsectarian · Ages 15 months–6 years</span>
+    </div>
+  </div>
+  <div class="tray" aria-label="Crayon tray">
+    <span>Pick up a crayon</span>
+    <i class="crayon on" style="background:#448cc4" data-c="#448cc4" title="Blue"></i>
+    <i class="crayon" style="background:#f2b84b" data-c="#f2b84b" title="Sun"></i>
+    <i class="crayon" style="background:#e9775e" data-c="#e9775e" title="Coral"></i>
+    <i class="crayon" style="background:#7fae6a" data-c="#7fae6a" title="Leaf"></i>
+    <button class="tool" id="drawBtn">Draw</button>
+    <button class="tool clear" id="clearBtn" aria-label="Clear drawing">Clear</button>
+  </div>
+</header>
+
+<section class="why" id="approach">
+  <svg class="doodle float" style="right:6%;top:40px" width="70" height="70" viewBox="0 0 70 70"><path d="M35 5l7 20h21l-17 12 6 21-17-13-17 13 6-21L7 25h21z" fill="#f2b84b"/></svg>
+  <div class="wrap grid">
+    <div class="rv">
+      <div class="eyebrow">Why families choose FMS</div>
+      <h2>Montessori, the way it was <em>meant</em> to be.</h2>
+      <p class="lead" style="margin-top:22px">Flossmoor Montessori School carries forward the education begun by physician-educator Dr. Maria Montessori — a method shaped by forty years of watching how children actually learn.</p>
+      <ul class="ticks">
+        <li><i>✦</i>Guides with rigorous Montessori credentials</li>
+        <li><i>☺</i>Mixed-age classrooms that grow leaders</li>
+        <li><i>✿</i>Practical life skills from the very first day</li>
+        <li><i>☾</i>After-school care until 5:30 pm</li>
+      </ul>
+    </div>
+    <div class="stats">
+      <div class="stat rv d1"><b data-count="3">3</b><span>programs, from first steps to kindergarten</span></div>
+      <div class="stat rv d2"><b>15<small style="font-size:.45em"> mo</small></b><span>to 6 years old, in one connected community</span></div>
+      <div class="stat rv d3"><b data-count="1967">1967</b><span>serving Flossmoor families since</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="programs">
+  <div class="wrap">
+    <div class="sh">
+      <div class="rv"><div class="eyebrow">Three classrooms, ages 15 months to 6</div><h2>A classroom for every <em>stage.</em></h2></div>
+      <div class="rv d1"><p>Each room is prepared for the child who is in it — child-height materials, freedom to move, and a Guide who knows when to step in and when to step back.</p></div>
+    </div>
+    <ul class="cards">
+      <li class="card rv">
+        <div class="ph"><img loading="lazy" src="https://framerusercontent.com/images/Ft02AM3QzCiDZNJPtMhGj2Cbf88.webp?scale-down-to=512" alt="A toddler stacking wooden blocks"><span class="age">15–30 months</span></div>
+        <div class="cb"><h3>Young Toddler</h3><p class="tag">A gentle first step from home into the classroom.</p>
+        <ul><li>Practical life: carrying, sweeping, handwashing</li><li>Language through conversation &amp; picture cards</li><li>Stories, painting, singing</li><li>Planting seeds every spring</li></ul></div>
+      </li>
+      <li class="card rv d1">
+        <div class="ph"><img loading="lazy" src="https://framerusercontent.com/images/ET0My4IpMp6GJHkRos2VGy1bhj4.webp?scale-down-to=512" alt="A young child playing outdoors"><span class="age">2–4 years</span></div>
+        <div class="cb"><h3>Pre-Primary</h3><p class="tag">Independence, senses and early thinking.</p><span class="meta">Potty training not required</span>
+        <ul><li>Self-care and care of the home</li><li>Sensorial work &amp; fine motor skills</li><li>Counting, matching, sorting</li><li>Art where the process matters most</li></ul></div>
+      </li>
+      <li class="card rv d2">
+        <div class="ph"><img loading="lazy" src="https://framerusercontent.com/images/9eoXCKPsf3C4rdFNu22QNpEqK98.webp?scale-down-to=512" alt="A child painting at a low table"><span class="age">3–6 years</span></div>
+        <div class="cb"><h3>Primary</h3><p class="tag">A three-year cycle ending in the Year of Leadership.</p><span class="meta">2.5–3 hour uninterrupted work period</span>
+        <ul><li>Practical life &amp; sensorial</li><li>Sandpaper Letters, Movable Alphabet</li><li>Number Rods to Golden Beads</li><li>Geography, science, history &amp; art</li></ul></div>
+      </li>
+      <li class="card rv d3">
+        <div class="ph"><img loading="lazy" src="https://framerusercontent.com/images/8zaxksHFxvhnBDKXdSxaL4kQOI.webp?scale-down-to=512" alt="A child reading a picture book"><span class="age">Pre-Primary &amp; Primary</span></div>
+        <div class="cb"><h3>After-School Care</h3><p class="tag">A relaxed end to the day, Monday to Friday.</p><span class="meta">Until 5:30 pm</span>
+        <ul><li>Arts and crafts</li><li>Dance and music</li><li>Manipulative materials</li><li>Plus holiday &amp; summer camps</li></ul></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="journey">
+  <div class="wrap">
+    <div class="sh">
+      <div class="rv"><div class="eyebrow">A child's path at FMS</div><h2>From first steps to <em>leading the room.</em></h2></div>
+      <div class="ctrl rv d1"><button id="prev" aria-label="Previous">←</button><button id="next" aria-label="Next">→</button></div>
+    </div>
+    <div class="track">
+      <div class="bar"><i id="barFill"></i></div>
+      <ol class="steps" id="steps">
+        <li class="step"><div class="t">15 mo</div><h4>Young Toddler begins</h4><p>A room that feels like an extension of home. Walking, carrying, greeting — the first practical life work.</p></li>
+        <li class="step"><div class="t">2–4</div><h4>Pre-Primary</h4><p>Sensorial materials, songs and stories, and early math. No potty training required to start.</p></li>
+        <li class="step"><div class="t">3</div><h4>Primary begins</h4><p>The three-year cycle starts, with a long morning work period and every material on the shelf available.</p></li>
+        <li class="step"><div class="t">4–5</div><h4>Language &amp; math deepen</h4><p>Sandpaper Letters become words; Golden Beads open the door to multiplication, division and fractions.</p></li>
+        <li class="step"><div class="t">5–6</div><h4>The Year of Leadership</h4><p>Kindergarten year: reading, writing and math put to work — and younger classmates mentored along the way.</p></li>
+        <li class="step"><div class="t">5:30</div><h4>After school</h4><p>Pre-Primary and Primary children can stay for crafts, music and dance until 5:30 pm.</p></li>
+        <li class="step"><div class="t">Breaks</div><h4>Winter, spring &amp; summer camp</h4><p>For enrolled students, 8:30 am to 4:00 pm, with weekly themes, gardening and a weekly summer water day.</p></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sh">
+      <div class="rv"><div class="eyebrow">The prepared environment</div><h2>Rooms built around the <em>child.</em></h2></div>
+      <div class="rv d1"><p>Many people describe Montessori as "child-led." That's true, but it's only part of it. Here is what sits underneath the freedom.</p></div>
+    </div>
+    <div class="env">
+      <div class="stage rv" id="stage">
+        <img class="on" src="https://framerusercontent.com/images/q613uoqWXKvIeJ33pCNyR1Qej4.webp?scale-down-to=2048" alt="A bright classroom with child-height shelves">
+        <img src="https://framerusercontent.com/images/NtHvFscHLm16IsOnLtT0schEzc.webp?scale-down-to=2048" alt="Children at a table">
+        <img src="https://framerusercontent.com/images/odOYFHTphRav9WGYSfuHBkl1Q.webp?scale-down-to=2048" alt="A teacher reading quietly">
+        <img src="https://framerusercontent.com/images/7sHUdK631NxLOLzNwuPjy8OXb0.webp?scale-down-to=2048" alt="Children watering plants outdoors">
+      </div>
+      <ul class="tabs rv d1" id="tabs">
+        <li class="tab on"><div class="h">The environment</div><p>Arranged to meet each child's developmental needs.</p><ul><li>Child-height materials</li><li>Freedom of movement</li><li>Builds confidence</li></ul></li>
+        <li class="tab"><div class="h">Practical life</div><p>The real tasks children see adults do — and want to do too.</p><ul><li>Pouring &amp; food prep</li><li>Buttoning &amp; shoe-tying</li><li>Caring for plants &amp; pets</li></ul></li>
+        <li class="tab"><div class="h">Trained Guides</div><p>Rigorous Montessori credentials, plus real experience with children.</p><ul><li>Observe each child</li><li>Materials by difficulty</li><li>Help on request</li></ul></li>
+        <li class="tab"><div class="h">Arts &amp; nature</div><p>Woven through the whole day, chosen by the child.</p><ul><li>Flower arranging</li><li>Music, dance &amp; theater</li><li>Seasons, plants &amp; animals</li></ul></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="guides" style="padding-bottom:80px">
+  <div class="wrap">
+    <div class="sh">
+      <div class="rv"><div class="eyebrow">The people</div><h2>Meet the Guides who know your child <em>by name.</em></h2></div>
+      <div class="rv d1"><p>Montessori-certified leads, experienced assistants and an administrator who has been part of FMS since 2014.</p><p class="hint" style="margin-top:10px">← Drag or scroll sideways →</p></div>
+    </div>
+  </div>
+  <ul class="rail" id="rail"></ul>
+</section>
+
+<section class="legacy">
+  <div class="wrap">
+    <div class="sh">
+      <div class="rv"><div class="eyebrow">Where it all began</div><h2>A method with more than a <em>century</em> behind it.</h2></div>
+      <div class="rv d1"><p>Maria Montessori was among the first women to become a physician in Italy — but her real passion was education.</p></div>
+    </div>
+    <ol class="years">
+      <li class="yr rv"><i class="pin"></i><div class="y">1870</div><p>Maria Montessori is born on August 31 in Chiaravalle, Italy.</p></li>
+      <li class="yr rv d1"><i class="pin"></i><div class="y">1907</div><p>She opens the first Casa dei Bambini — the "Children's House" — in Rome.</p></li>
+      <li class="yr rv d2"><i class="pin"></i><div class="y">Books</div><p><i>The Montessori Method</i> and <i>The Secret of Childhood</i> carry her ideas worldwide.</p></li>
+      <li class="yr rv d3"><i class="pin"></i><div class="y">1952</div><p>She dies on May 6 in Noordwijk, Netherlands. Her schools keep growing.</p></li>
+      <li class="yr fms rv d4"><i class="pin"></i><div class="y">1967</div><p>Flossmoor Montessori School opens its doors on Western Avenue.</p></li>
+    </ol>
+  </div>
+</section>
+
+<section id="fees">
+  <div class="wrap">
+    <div class="sh">
+      <div class="rv"><div class="eyebrow">Admission &amp; fees</div><h2>Clear steps. <em>No surprises.</em></h2></div>
+      <div class="rv d1"><p>Here is everything it takes to join the wait pool and enroll. Tuition depends on your child's program and schedule — the office will walk you through it.</p></div>
+    </div>
+    <ul class="fees">
+      <li class="fee rv">
+        <div class="k">Application</div><div class="s">To join the wait pool</div>
+        <div class="p">$100</div><div class="u">one time · nonrefundable</div>
+        <ul><li>Enrollment application</li><li>Child information form</li><li>We call when a spot opens</li></ul>
+        <a class="btn ghost" href="#visit">Start with a tour</a>
+      </li>
+      <li class="fee hi rv d1">
+        <div class="k">Deposit <span class="badge">Refundable</span></div><div class="s">Holds your child's place</div>
+        <div class="p">$250</div><div class="u">rolls over every school year</div>
+        <ul><li>Due once you're accepted</li><li>Meet &amp; greet with the Guide first</li><li>Start date set together</li><li>Refundable per school policy</li></ul>
+        <a class="btn" href="#visit">Book a tour</a>
+      </li>
+      <li class="fee rv d2">
+        <div class="k">Student service fee</div><div class="s">Each school year</div>
+        <div class="p">$250</div><div class="u">annually · nonrefundable</div>
+        <ul><li>Due at enrollment &amp; re-enrollment</li><li>Welcome letter from your Guide</li><li>Class supply list</li></ul>
+        <a class="btn ghost" href="mailto:info@flossmoormontessori.org?subject=Tuition%20question">Ask about tuition</a>
+      </li>
+    </ul>
+    <p class="fine rv">Tuition by program and schedule: call 708-798-4600 or email info@flossmoormontessori.org</p>
+  </div>
+</section>
+
+<section id="faq" style="padding-top:40px">
+  <div class="wrap">
+    <div class="sh"><div class="rv"><div class="eyebrow">Questions</div><h2>What parents ask us <em>first.</em></h2></div></div>
+    <div class="faq">
+      <div class="rv">
+        <details open><summary>What ages do you take?</summary><p>Children from about 15 months to 6 years, across three programs: Young Toddler (15–30 months), Pre-Primary (2–4 years) and Primary (3–6 years), with kindergarten as the final Primary year.</p></details>
+        <details><summary>Does my child need to be potty trained?</summary><p>Not for Pre-Primary. The program supports children as they build self-care skills, toileting included.</p></details>
+        <details><summary>Does Montessori work for every child?</summary><p>A skilled Guide can adapt Montessori to most children. We accept children with special needs selectively, so every classroom keeps working well for everyone in it.</p></details>
+        <details><summary>Why mix ages in one classroom?</summary><p>Mixed ages build leadership, empathy, patience and responsibility. Older children aren't required to help younger ones — but they often choose to, and teaching reinforces their own learning.</p></details>
+        <details><summary>What if my child avoids hard work?</summary><p>Materials are arranged by difficulty and Guides watch each child closely, nudging the hesitant and challenging the bold. Children move on as they master each step.</p></details>
+        <details><summary>Do children learn music and art?</summary><p>Yes. Art, music, dance and literature are available throughout the day, along with flower arranging and paper folding. Children choose when to engage.</p></details>
+        <details><summary>How do tours work?</summary><p>Tours are by appointment. We also host an adults-only tour with a parent volunteer and our administrative staff on the second Tuesday of each month, starting promptly at 10 a.m.</p></details>
+        <details><summary>What are your hours?</summary><p>The office is open 8:00 am to 3:00 pm. After-school care runs until 5:30 pm, Monday to Friday, and camps run 8:30 am to 4:00 pm during winter, spring and summer breaks.</p></details>
+      </div>
+      <aside class="ask rv d1">
+        <h3>Still a question?</h3>
+        <p>Ask us anything about programs, tuition or the wait pool.</p>
+        <ul>
+          <li>Call <a href="tel:+17087984600">708-798-4600</a></li>
+          <li>Email <a href="mailto:info@flossmoormontessori.org">info@flossmoormontessori.org</a></li>
+        </ul>
+        <a class="btn" href="mailto:info@flossmoormontessori.org">Write to us <span class="arr">→</span></a>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section id="visit" style="padding-top:20px">
+  <div class="wrap">
+    <div class="visit rv">
+      <div class="l">
+        <div class="eyebrow">Come and see it</div>
+        <h2>See a Montessori morning for <em>yourself.</em></h2>
+        <p class="lead" style="margin-top:18px">Walk the classrooms, meet a Guide and bring all your questions. Tell us which program you're curious about and we'll make sure the right person is there.</p>
+        <div class="q"><b>Which program?</b><div class="chips" data-g="program">
+          <button class="chip on">Young Toddler</button><button class="chip">Pre-Primary</button><button class="chip">Primary</button><button class="chip">After-School Care</button></div></div>
+        <div class="q"><b>Which tour?</b><div class="chips" data-g="tour">
+          <button class="chip on">By appointment</button><button class="chip">Second-Tuesday tour, 10 a.m.</button></div></div>
+        <div class="row"><a class="btn" id="tourBtn" href="#">Book a tour <span class="arr">→</span></a> Call <a href="tel:+17087984600">708-798-4600</a></div>
+        <p class="note">Monthly group tours are for adults only.</p>
+      </div>
+      <div class="r"><img loading="lazy" src="https://framerusercontent.com/images/xuHufIHUQvfkBAP22ZkZfBP9Lg.webp?scale-down-to=2048" alt="A parent lifting a laughing child"></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <div class="brand"><span>Flossmoor Montessori School</span></div>
+        <ul style="margin-top:18px">
+          <li>740 Western Avenue, Flossmoor, IL 60422</li>
+          <li><a href="tel:+17087984600">708-798-4600</a></li>
+          <li><a href="mailto:info@flossmoormontessori.org">info@flossmoormontessori.org</a></li>
+        </ul>
+      </div>
+      <div><h5>Programs</h5><ul><li><a href="#programs">Young Toddler</a></li><li><a href="#programs">Pre-Primary</a></li><li><a href="#programs">Primary</a></li><li><a href="#programs">After-School Care</a></li><li><a href="#programs">Camps</a></li></ul></div>
+      <div><h5>Admission</h5><ul><li><a href="#fees">Enrollment</a></li><li><a href="#fees">Tuition &amp; fees</a></li><li><a href="#visit">Schedule a tour</a></li><li><a href="#faq">FAQs</a></li><li><a href="#guides">Meet our staff</a></li></ul></div>
+      <div><h5>Office hours</h5><p>8:00 am – 3:00 pm</p><p style="margin-top:14px">Flossmoor, right now</p><div class="clock" id="clock">--:--</div></div>
+    </div>
+    <div class="fb"><span>© 2026 Flossmoor Montessori School. Licensed by the Illinois Department of Children &amp; Family Services. Concept design by Virtual Media Hive.</span><button class="top" onclick="scrollTo({top:0})">Back to top ↑</button></div>
+  </div>
+</footer>
+
+<script>
+// staff
+const staff=[
+ ["Bansari Modi","Administrator","Former physical therapist who joined FMS to promote Montessori learning; tutors and volunteers for education fundraising.","At FMS since 2014"],
+ ["Leticia Banda","Program Director","Infant-Toddler certified (Seton Montessori Institute). Has translated for Spanish-speaking families in Early Intervention.","13+ years in early childhood"],
+ ["Lisa Green","Lead Young Toddler Guide","Infant-Toddler certified (Seton Montessori Institute); holds a Paraprofessional License in Education.","10 years with Chicago Public Schools"],
+ ["Candice Hall","Lead Pre-Primary Guide","0–3 certified (Center for Guided Montessori Studies); previously led an infant-toddler program.","10+ years in childcare"],
+ ["Haritha Reddy Nayani","Lead Primary Guide","AMI Primary trained. Sees Montessori as a way of life, not just a method.","11 years as a lead guide + 4 in Morocco"],
+ ["Kamakshi Modaliar","Lead Primary Guide","Primary (3–6) trained in Hyderabad; spent 14.5 years at a Montessori school in Singapore.","15+ years in Montessori"],
+ ["Kushawn Leggette","Primary Assistant","ECE Level 1 credential and an ECE Associate's degree with a special-education emphasis.","At FMS since 2023"],
+ ["Christina Williams","Young Toddler Assistant","Also part of aftercare; ran her own home daycare for five years.","7 years at FMS"],
+ ["Aeradise Veley","Floating Assistant","Montessori-trained guide and former director with a degree in early childhood education.","~10 years in childcare"],
+ ["Jalanni Johnson","Primary Assistant","Bachelor's degree from Central State University; loves how Montessori lets children own their learning.","4 years with young children"],
+ ["Ann Smith","Support Staff","Part of the team that keeps every day at FMS running smoothly.","FMS team"]
+];
+const cols=["#448cc4","#e9775e","#7fae6a","#f2b84b","#2f6d9e"];
+document.getElementById('rail').innerHTML=staff.map((s,i)=>{const ini=s[0].split(' ').map(w=>w[0]).slice(0,2).join('');return `<li class="guide"><div class="av" style="background:${cols[i%5]};transform:rotate(${i%2?5:-5}deg)">${ini}</div><b>${s[0]}</b><span class="role">${s[1]}</span><p>${s[2]}</p><span class="yrs">${s[3]}</span></li>`}).join('');
+
+// hero words
+const h=document.getElementById('h1');h.innerHTML=h.textContent.split(' ').map((w,i)=>`<span class="w" style="animation-delay:${.15+i*.09}s">${w==='themselves.'?'<em>themselves.</em>':w}</span>`).join(' ');
+
+// nav
+const nav=document.getElementById('nav');addEventListener('scroll',()=>nav.classList.toggle('scrolled',scrollY>30),{passive:true});
+
+// reveal + counters
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');e.target.querySelectorAll('[data-count]').forEach(count);io.unobserve(e.target)}),{threshold:.15});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+function count(el){const end=+el.dataset.count,start=end>1000?1900:0,t0=performance.now();const tick=t=>{const p=Math.min(1,(t-t0)/1400),v=Math.round(start+(end-start)*(1-Math.pow(1-p,3)));el.textContent=v;if(p<1)requestAnimationFrame(tick)};requestAnimationFrame(tick)}
+
+// drawing
+const cv=document.getElementById('draw'),cx=cv.getContext('2d');let col='#448cc4',down=false,last=null;
+function size(){const r=cv.getBoundingClientRect(),d=devicePixelRatio||1,img=cv.width?cx.getImageData(0,0,cv.width,cv.height):null;cv.width=r.width*d;cv.height=r.height*d;cx.scale(d,d);cx.lineCap='round';cx.lineJoin='round';}
+size();addEventListener('resize',size);
+const pos=e=>{const r=cv.getBoundingClientRect();return{x:e.clientX-r.left,y:e.clientY-r.top}};
+cv.addEventListener('pointerdown',e=>{down=true;last=pos(e);cv.setPointerCapture(e.pointerId)});
+cv.addEventListener('pointermove',e=>{if(!down)return;const p=pos(e);cx.strokeStyle=col;cx.globalAlpha=.85;cx.lineWidth=7+Math.random()*2;cx.beginPath();cx.moveTo(last.x,last.y);cx.lineTo(p.x,p.y);cx.stroke();last=p});
+addEventListener('pointerup',()=>down=false);
+document.querySelectorAll('.crayon').forEach(c=>c.onclick=()=>{document.querySelectorAll('.crayon').forEach(x=>x.classList.remove('on'));c.classList.add('on');col=c.dataset.c;document.body.classList.add('drawing');drawBtn.textContent='Done'});
+const drawBtn=document.getElementById('drawBtn');drawBtn.onclick=()=>{const on=document.body.classList.toggle('drawing');drawBtn.textContent=on?'Done':'Draw'};
+document.getElementById('clearBtn').onclick=()=>cx.clearRect(0,0,cv.width,cv.height);
+
+// journey
+const st=document.getElementById('steps'),bf=document.getElementById('barFill');
+const upd=()=>{const m=st.scrollWidth-st.clientWidth;bf.style.width=(m>0?Math.max(.08,st.scrollLeft/m):1)*100+'%'};st.addEventListener('scroll',upd,{passive:true});upd();
+document.getElementById('next').onclick=()=>st.scrollBy({left:280,behavior:'smooth'});
+document.getElementById('prev').onclick=()=>st.scrollBy({left:-280,behavior:'smooth'});
+
+// env tabs
+const tabs=[...document.querySelectorAll('#tabs .tab')],imgs=[...document.querySelectorAll('#stage img')];
+tabs.forEach((t,i)=>t.onclick=()=>{tabs.forEach(x=>x.classList.remove('on'));imgs.forEach(x=>x.classList.remove('on'));t.classList.add('on');imgs[i].classList.add('on')});
+
+// drag rail
+const rail=document.getElementById('rail');let rx=null,rs=0;
+rail.addEventListener('pointerdown',e=>{if(e.pointerType!=='mouse')return;rx=e.clientX;rs=rail.scrollLeft;rail.classList.add('dragging')});
+addEventListener('pointermove',e=>{if(rx===null)return;rail.scrollLeft=rs-(e.clientX-rx)});
+addEventListener('pointerup',()=>{rx=null;rail.classList.remove('dragging')});
+
+// visit chips -> mailto (nothing is collected on this page)
+const pick={program:'Young Toddler',tour:'By appointment'};
+document.querySelectorAll('.chips').forEach(g=>g.querySelectorAll('.chip').forEach(c=>c.onclick=()=>{g.querySelectorAll('.chip').forEach(x=>x.classList.remove('on'));c.classList.add('on');pick[g.dataset.g]=c.textContent;setTour()}));
+function setTour(){document.getElementById('tourBtn').href='mailto:info@flossmoormontessori.org?subject='+encodeURIComponent('Tour request: '+pick.program)+'&body='+encodeURIComponent('Hello! I would like to schedule a tour ('+pick.tour+') for the '+pick.program+' program.')}
+setTour();
+
+// clock
+const ck=document.getElementById('clock');const tk=()=>ck.textContent=new Date().toLocaleTimeString('en-US',{timeZone:'America/Chicago',hour:'numeric',minute:'2-digit'});tk();setInterval(tk,15000);
+</script>
+</body>
+</html>
